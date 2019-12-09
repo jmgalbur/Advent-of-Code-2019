@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script src="aoc.js"></script>
+		<script>
+			window.onload = () => {
+				main()
+				main2()
+			};
+
+			function displayOut(which, what) {
+				switch (which) {
+					case 1:
+						document.getElementById("output").innerText = what;
+						break;
+					case 2:
+						document.getElementById("output2").innerText = what;
+						break;
+				}
+			}
+
+			function getIn() {
+				return document.getElementById("input").innerText
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="output"></h1>
+		<h1 id="output2"></h1>
+		<pre id="input"><!--input goes here--></pre>
+	</body>
+</html>
